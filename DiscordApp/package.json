@@ -1,0 +1,27 @@
+{
+  "name": "airanch-discord",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Discord bot for Qwen Code agent output",
+  "main": "src/app.js",
+  "type": "module",
+  "engines": {
+    "node": ">=18.x"
+  },
+  "scripts": {
+    "start": "node src/app.js",
+    "register": "node src/commands.js",
+    "dev": "nodemon src/app.js"
+  },
+  "author": "Shay DeWael",
+  "license": "MIT",
+  "dependencies": {
+    "@earendil-works/pi-coding-agent": "^0.74.2",
+    "discord-interactions": "^4.0.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}
